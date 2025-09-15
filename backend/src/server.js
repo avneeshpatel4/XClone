@@ -22,3 +22,19 @@ const startServer = async () => {
 };
 
 startServer();
+
+const startServer1 = async () => {
+  try {
+    await connectDB();
+
+    // listen for local development
+
+     app.listen(ENV.PORT, () => console.log("Server is up and running on PORT:", ENV.PORT));
+    
+  } catch (error) {
+    console.error("Failed to start server:", error.message);
+    process.exit(1);
+  }
+};
+
+startServer1();
