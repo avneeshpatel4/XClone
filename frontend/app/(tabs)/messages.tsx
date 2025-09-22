@@ -162,6 +162,7 @@ const MessagesScreen = () => {
                         className="size-8 rounded-full mr-2"
                       />
                     )}
+                    
                     <View className={`flex-1 ${message.fromUser ? "items-end" : ""}`}>
                       <View
                         className={`rounded-2xl px-4 py-3 max-w-xs ${
